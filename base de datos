@@ -1,0 +1,165 @@
+-- ============================================================
+--  BASE DE DATOS: Nova_DB
+--  SQL Server 2019+
+-- ============================================================
+
+USE master;
+GO
+
+IF EXISTS (SELECT name FROM sys.databases WHERE name = 'Nova_DB')
+BEGIN
+    ALTER DATABASE Nova_DB SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE Nova_DB;
+END
+GO
+
+CREATE DATABASE Nova_DB
+    COLLATE Modern_Spanish_CI_AI;
+GO
+
+USE Nova_DB;
+GO
+
+-- ============================================================
+--  TABLA: Usuario
+-- ============================================================
+CREATE TABLE Usuario (
+    id          INT             NOT NULL IDENTITY(1,1),
+    nombre      NVARCHAR(100)   NOT NULL,
+    email       NVARCHAR(150)   NOT NULL,
+    password    NVARCHAR(255)   NOT NULL,
+    rol         NVARCHAR(50)    NOT NULL,
+    CONSTRAINT PK_Usuario       PRIMARY KEY (id),
+    CONSTRAINT UQ_Usuario_email UNIQUE (email),
+    CONSTRAINT CK_Usuario_rol   CHECK (rol IN ('Administrador', 'Empleado', 'Cliente'))
+);
+GO
+
+-- ============================================================
+--  TABLA: Administrador  (hereda de Usuario)
+-- ============================================================
+CREATE TABLE Administrador (
+    id INT NOT NULL,
+    CONSTRAINT PK_Administrador         PRIMARY KEY (id),
+    CONSTRAINT FK_Administrador_Usuario FOREIGN KEY (id)
+        REFERENCES Usuario(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+GO
+
+-- ============================================================
+--  TABLA: Empleado  (hereda de Usuario)
+-- ============================================================
+CREATE TABLE Empleado (
+    id INT NOT NULL,
+    CONSTRAINT PK_Empleado         PRIMARY KEY (id),
+    CONSTRAINT FK_Empleado_Usuario FOREIGN KEY (id)
+        REFERENCES Usuario(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+GO
+
+-- ============================================================
+--  TABLA: Cliente  (hereda de Usuario)
+-- ============================================================
+CREATE TABLE Cliente (
+    id INT NOT NULL,
+    CONSTRAINT PK_Cliente         PRIMARY KEY (id),
+    CONSTRAINT FK_Cliente_Usuario FOREIGN KEY (id)
+        REFERENCES Usuario(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+GO
+
+-- ============================================================
+--  TABLA: Producto
+-- ============================================================
+CREATE TABLE Producto (
+    id             INT             NOT NULL IDENTITY(1,1),
+    nombre         NVARCHAR(150)   NOT NULL,
+    precioCompra   FLOAT           NOT NULL,
+    precioVenta    FLOAT           NOT NULL,
+    stock          INT             NOT NULL DEFAULT 0,
+    CONSTRAINT PK_Producto              PRIMARY KEY (id),
+    CONSTRAINT CK_Producto_precioCompra CHECK (precioCompra >= 0),
+    CONSTRAINT CK_Producto_precioVenta  CHECK (precioVenta  >= 0),
+    CONSTRAINT CK_Producto_stock        CHECK (stock        >= 0)
+);
+GO
+
+-- ============================================================
+--  TABLA: MovimientoStock
+-- ============================================================
+CREATE TABLE MovimientoStock (
+    id               INT             NOT NULL IDENTITY(1,1),
+    fecha            DATE            NOT NULL DEFAULT CAST(GETDATE() AS DATE),
+    tipoMovimiento   NVARCHAR(50)    NOT NULL,
+    cantidadAnterior INT             NOT NULL,
+    cantidadNueva    INT             NOT NULL,
+    usuario_id       INT             NOT NULL,
+    producto_id      INT             NOT NULL,
+    CONSTRAINT PK_MovimientoStock          PRIMARY KEY (id),
+    CONSTRAINT FK_MovimientoStock_Usuario  FOREIGN KEY (usuario_id)
+        REFERENCES Usuario(id),
+    CONSTRAINT FK_MovimientoStock_Producto FOREIGN KEY (producto_id)
+        REFERENCES Producto(id),
+    CONSTRAINT CK_MovimientoStock_tipo     CHECK (tipoMovimiento IN ('ENTRADA','SALIDA','AJUSTE'))
+);
+GO
+
+-- ============================================================
+--  TABLA: Venta
+-- ============================================================
+CREATE TABLE Venta (
+    id          INT     NOT NULL IDENTITY(1,1),
+    fecha       DATE    NOT NULL DEFAULT CAST(GETDATE() AS DATE),
+    total       FLOAT   NOT NULL DEFAULT 0,
+    empleado_id INT     NOT NULL,
+    cliente_id  INT     NULL,
+    CONSTRAINT PK_Venta          PRIMARY KEY (id),
+    CONSTRAINT FK_Venta_Empleado FOREIGN KEY (empleado_id)
+        REFERENCES Empleado(id),
+    CONSTRAINT FK_Venta_Cliente  FOREIGN KEY (cliente_id)
+        REFERENCES Cliente(id),
+    CONSTRAINT CK_Venta_total    CHECK (total >= 0)
+);
+GO
+
+-- ============================================================
+--  TABLA: DetalleVenta
+-- ============================================================
+CREATE TABLE DetalleVenta (
+    id             INT     NOT NULL IDENTITY(1,1),
+    cantidad       INT     NOT NULL,
+    precioUnitario FLOAT   NOT NULL,
+    venta_id       INT     NOT NULL,
+    producto_id    INT     NOT NULL,
+    CONSTRAINT PK_DetalleVenta          PRIMARY KEY (id),
+    CONSTRAINT FK_DetalleVenta_Venta    FOREIGN KEY (venta_id)
+        REFERENCES Venta(id) ON DELETE CASCADE,
+    CONSTRAINT FK_DetalleVenta_Producto FOREIGN KEY (producto_id)
+        REFERENCES Producto(id),
+    CONSTRAINT CK_DetalleVenta_cantidad CHECK (cantidad       > 0),
+    CONSTRAINT CK_DetalleVenta_precio   CHECK (precioUnitario >= 0)
+);
+GO
+
+-- ============================================================
+--  TABLA: ReporteMensual
+-- ============================================================
+CREATE TABLE ReporteMensual (
+    id               INT     NOT NULL IDENTITY(1,1),
+    mes              INT     NOT NULL,
+    anio             INT     NOT NULL,
+    ingresos         FLOAT   NOT NULL DEFAULT 0,
+    egresos          FLOAT   NOT NULL DEFAULT 0,
+    utilidadNeta     FLOAT   NOT NULL DEFAULT 0,
+    administrador_id INT     NOT NULL,
+    CONSTRAINT PK_ReporteMensual               PRIMARY KEY (id),
+    CONSTRAINT FK_ReporteMensual_Administrador FOREIGN KEY (administrador_id)
+        REFERENCES Administrador(id),
+    CONSTRAINT CK_ReporteMensual_mes           CHECK (mes  BETWEEN 1 AND 12),
+    CONSTRAINT CK_ReporteMensual_anio          CHECK (anio > 2000),
+    CONSTRAINT UQ_ReporteMensual_periodo       UNIQUE (mes, anio, administrador_id)
+);
+GO
+
+PRINT 'Base de datos Nova_DB creada exitosamente.';
+GO
