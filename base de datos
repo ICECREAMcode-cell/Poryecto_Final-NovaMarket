@@ -163,3 +163,35 @@ GO
 
 PRINT 'Base de datos Nova_DB creada exitosamente.';
 GO
+
+-- 1. Crear la tabla de Roles
+CREATE TABLE Rol (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    nombre NVARCHAR(50) NOT NULL UNIQUE
+);
+GO
+
+-- 2. Insertar los roles iniciales
+INSERT INTO Rol (nombre) VALUES ('Administrador'), ('Empleado'), ('Cliente');
+GO
+
+-- 3. Modificar la tabla Usuario
+-- Primero eliminamos la restricción CHECK antigua
+ALTER TABLE Usuario DROP CONSTRAINT CK_Usuario_rol;
+
+-- Añadimos la columna rol_id
+ALTER TABLE Usuario ADD rol_id INT;
+
+-- (Opcional) Migrar datos existentes si ya tenías usuarios
+-- UPDATE Usuario SET rol_id = (SELECT id FROM Rol WHERE nombre = Usuario.rol);
+
+-- Eliminamos la columna 'rol' de texto y hacemos 'rol_id' obligatorio
+ALTER TABLE Usuario DROP COLUMN rol;
+ALTER TABLE Usuario ALTER COLUMN rol_id INT NOT NULL;
+
+-- Creamos la llave foránea
+ALTER TABLE Usuario ADD CONSTRAINT FK_Usuario_Rol 
+FOREIGN KEY (rol_id) REFERENCES Rol(id);
+GO
+
+SELECT * FROM Rol;
