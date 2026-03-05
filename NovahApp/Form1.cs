@@ -34,6 +34,12 @@ namespace NovahApp
         // Navegación a los módulos que unificamos antes
         private void btnInventario_Click(object sender, EventArgs e) => new frmGestionInventario().Show();
         private void btnReportes_Click(object sender, EventArgs e) => new frmAdminDashboard().Show();
-        // private void btnVentas_Click(object sender, EventArgs e) => new frmVentas().Show();
-    }
+        private void btnGestionUsuarios_Click(object sender, EventArgs e)
+        {
+        // Creamos la instancia del panel de administración unificado   
+         NovahApp.Views.frmAdminDashboard pantallaAdmin = new NovahApp.Views.frmAdminDashboard();
+        // Lo abrimos como cuadro de diálogo para que no pierdas el menú principal
+        pantallaAdmin.ShowDialog(); 
+        }
+    }       
 }

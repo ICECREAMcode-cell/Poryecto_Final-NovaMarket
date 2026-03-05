@@ -1,46 +1,83 @@
 using System;
-using System.Data;
-using System.Drawing;
 using System.Windows.Forms;
-using NovahApp.Controllers;
+using System.Drawing;
+using System.Data;
+using Microsoft.Data.SqlClient; // ESTA LÍNEA FALTA Y CORRIGE EL ERROR CS0246
+using NovahApp.Data;
 
 namespace NovahApp.Views
 {
     public class frmAdminDashboard : Form
     {
-        // Controles unificados
-        private DataGridView dgvAdmin;
-        private Button btnVerGanancias;
-        private Label lblResumen;
-        private AdminController _control = new AdminController();
+        private DataGridView dgv = new DataGridView();
+        private Button btnCrear = new Button();
+        private Button btnBan = new Button();
+        private Button btnDel = new Button();
+        private AuthRepository _repo = new AuthRepository();
 
         public frmAdminDashboard()
         {
-            InitializeComponentManual();
-        }
+            this.Text = "Administración de Usuarios - NovaMarket";
+            this.Size = new Size(850, 500);
+            this.StartPosition = FormStartPosition.CenterScreen;
 
-        private void InitializeComponentManual()
-        {
-            this.Text = "Panel de Administrador - NovaMarket";
-            this.Size = new Size(800, 500);
-
-            dgvAdmin = new DataGridView { Location = new Point(20, 70), Size = new Size(740, 320), Name = "dgvAdmin" };
-            btnVerGanancias = new Button { Text = "Cargar Reporte Financiero", Location = new Point(20, 20), Size = new Size(200, 35) };
-            lblResumen = new Label { Text = "Utilidad Neta: $0.00", Location = new Point(20, 410), Size = new Size(400, 30), Font = new Font("Arial", 12, FontStyle.Bold) };
-
-            btnVerGanancias.Click += (s, e) => {
-                DataTable dt = _control.CargarReporte();
-                dgvAdmin.DataSource = dt;
-                double total = 0;
-                foreach (DataRow row in dt.Rows) total += Convert.ToDouble(row["UtilidadNeta"]);
-                lblResumen.Text = $"Utilidad Neta Total: {total:C2}";
+            dgv.Location = new Point(20, 80);
+            dgv.Size = new Size(790, 350);
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.ReadOnly = true;
+            
+            btnCrear.Text = "+ Agregar";
+            btnCrear.Location = new Point(20, 25);
+            btnCrear.Size = new Size(120, 35);
+            btnCrear.Click += (s, e) => { new frmRegistro(true).ShowDialog(); Cargar(); };
+            
+            btnBan.Text = "🚫 Denegar/Activar";
+            btnBan.Location = new Point(150, 25);
+            btnBan.Size = new Size(150, 35);
+            btnBan.BackColor = Color.LightSalmon;
+            btnBan.Click += (s, e) => {
+                if (dgv.CurrentRow != null) {
+                    int id = Convert.ToInt32(dgv.CurrentRow.Cells["id"].Value);
+                    bool act = Convert.ToBoolean(dgv.CurrentRow.Cells["activo"].Value);
+                    // Cambiamos a CambiarEstadoUsuario para que coincida con tu Repo
+                    _repo.CambiarEstadoUsuario(id, !act); 
+                    Cargar();
+                }
             };
 
-            this.Controls.AddRange(new Control[] { dgvAdmin, btnVerGanancias, lblResumen });
-            // Dentro del frmAdminDashboard:
-Button btnCrearEmpleado = new Button { Text = "Registrar Empleado", Location = new Point(250, 20), Size = new Size(150, 35) };
-btnCrearEmpleado.Click += (s, e) => new frmRegistro(2).ShowDialog(); // Rol 2 = Empleado
-this.Controls.Add(btnCrearEmpleado);
+            btnDel.Text = "🗑️ Eliminar Usuario";
+            btnDel.Location = new Point(310, 25);
+            btnDel.Size = new Size(150, 35);
+            btnDel.BackColor = Color.Firebrick;
+            btnDel.ForeColor = Color.White;
+            btnDel.Click += (s, e) => {
+                if (dgv.CurrentRow != null) {
+                    int id = Convert.ToInt32(dgv.CurrentRow.Cells["id"].Value);
+                    if(MessageBox.Show("¿Eliminar usuario?", "Confirmar", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                        _repo.EliminarUsuario(id);
+                        Cargar();
+                    }
+                }
+            };
+
+            this.Controls.AddRange(new Control[] { dgv, btnCrear, btnBan, btnDel });
+            Cargar();
+        }
+
+        private void Cargar()
+        {
+            try {
+                using (var conn = DbContext.Instance.GetConnection()) {
+                    // El JOIN con Rol es necesario según tu SQL
+                    string sql = "SELECT u.id, u.nombre, u.email, r.nombre as Rol, u.activo FROM Usuario u JOIN Rol r ON u.rol_id = r.id";
+                    SqlDataAdapter da = new SqlDataAdapter(sql, conn);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    dgv.DataSource = dt;
+                }
+            } catch (Exception ex) {
+                MessageBox.Show("Error al cargar: " + ex.Message);
+            }
         }
     }
 }

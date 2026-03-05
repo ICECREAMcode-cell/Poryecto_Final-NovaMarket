@@ -7,8 +7,8 @@ namespace NovahApp.Views
 {
     public partial class frmLogin : Form
     {
-        private TextBox txtEmail, txtPassword;
-        private Button btnEntrar, btnRegistro;
+        private TextBox txtEmail, txtPassword = new TextBox();
+        private Button btnEntrar= new Button(), btnRegistro= new Button();
         private AuthRepository _auth = new AuthRepository();
 
         public frmLogin()
@@ -53,7 +53,7 @@ namespace NovahApp.Views
                 ForeColor = Color.Blue 
             };
             // Llamamos al registro con Rol 3 (Cliente)
-            btnRegistro.Click += (s, e) => new frmRegistro(3).ShowDialog();
+            btnRegistro.Click += (s, e) => new frmRegistro(false).ShowDialog();
 
             this.Controls.AddRange(new Control[] { lblEm, txtEmail, lblPw, txtPassword, btnEntrar, btnRegistro });
         }

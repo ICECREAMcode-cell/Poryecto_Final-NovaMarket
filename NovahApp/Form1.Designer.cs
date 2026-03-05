@@ -38,6 +38,8 @@
             this.btnGestionUsuarios.Name = "btnGestionUsuarios";
             this.btnGestionUsuarios.Size = new System.Drawing.Size(200, 40);
             this.btnGestionUsuarios.Text = "Gestión de Usuarios";
+            // Busca donde se configura tu botón btnGestionUsuarios y añade esta línea:
+            this.btnGestionUsuarios.Click += new System.EventHandler(this.btnGestionUsuarios_Click);
 
             // btnReportes
             this.btnReportes.Location = new System.Drawing.Point(50, 110);
@@ -71,6 +73,8 @@
             this.Text = "NovaMarket - Menú Principal";
             this.ResumeLayout(false);
             this.PerformLayout();
+            //Cerrar secion
+            
         }
     }
 }
