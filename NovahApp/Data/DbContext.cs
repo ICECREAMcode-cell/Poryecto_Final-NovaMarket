@@ -1,13 +1,12 @@
 using Microsoft.Data.SqlClient;
-
-namespace TiendaApp.Data
+namespace NovahApp.Data
 {
     public class DbContext
     {
         private static DbContext? _instance;
         private static readonly object _lock = new object();
-        private readonly string _connStr = "Server=DESKTOP-PMI0ES2\\SQLEXPRESS;Database=Nova_Db;Trusted_Connection=True;TrustServerCertificate=True";
-
+        private readonly string _connStr = "Server=DESKTOP-PMI0ES2\\SQLEXPRESS;Database=Nova_DB;Trusted_Connection=True;TrustServerCertificate=True";
+        
         private DbContext() { }
 
 

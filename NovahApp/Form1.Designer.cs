@@ -1,38 +1,76 @@
-﻿namespace NovahApp;
-
-partial class Form1
+﻿namespace NovahApp
 {
-    /// <summary>
-    ///  Required designer variable.
-    /// </summary>
-    private System.ComponentModel.IContainer components = null;
-
-    /// <summary>
-    ///  Clean up any resources being used.
-    /// </summary>
-    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-    protected override void Dispose(bool disposing)
+    partial class Form1
     {
-        if (disposing && (components != null))
+        private System.ComponentModel.IContainer components = null;
+
+        // Declaramos los controles como PUBLIC para que el .cs los encuentre siempre
+        public System.Windows.Forms.Button btnGestionUsuarios;
+        public System.Windows.Forms.Button btnReportes;
+        public System.Windows.Forms.Button btnInventario;
+        public System.Windows.Forms.Button btnVentas;
+        public System.Windows.Forms.Label lblBienvenida;
+
+        protected override void Dispose(bool disposing)
         {
-            components.Dispose();
+            if (disposing && (components != null)) components.Dispose();
+            base.Dispose(disposing);
         }
-        base.Dispose(disposing);
+
+        private void InitializeComponent()
+        {
+            this.btnGestionUsuarios = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnInventario = new System.Windows.Forms.Button();
+            this.btnVentas = new System.Windows.Forms.Button();
+            this.lblBienvenida = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+
+            // lblBienvenida
+            this.lblBienvenida.AutoSize = true;
+            this.lblBienvenida.Location = new System.Drawing.Point(20, 20);
+            this.lblBienvenida.Name = "lblBienvenida";
+            this.lblBienvenida.Size = new System.Drawing.Size(100, 15);
+            this.lblBienvenida.Text = "Bienvenido...";
+
+            // btnGestionUsuarios
+            this.btnGestionUsuarios.Location = new System.Drawing.Point(50, 60);
+            this.btnGestionUsuarios.Name = "btnGestionUsuarios";
+            this.btnGestionUsuarios.Size = new System.Drawing.Size(200, 40);
+            this.btnGestionUsuarios.Text = "Gestión de Usuarios";
+
+            // btnReportes
+            this.btnReportes.Location = new System.Drawing.Point(50, 110);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(200, 40);
+            this.btnReportes.Text = "Reportes de Ganancias";
+
+            // btnInventario
+            this.btnInventario.Location = new System.Drawing.Point(50, 160);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Size = new System.Drawing.Size(200, 40);
+            this.btnInventario.Text = "Inventario / Stock";
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
+
+            // btnVentas
+            this.btnVentas.Location = new System.Drawing.Point(50, 210);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(200, 40);
+            this.btnVentas.Text = "Ventas / Catálogo";
+
+            // Form1
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(350, 350);
+            this.Controls.Add(this.lblBienvenida);
+            this.Controls.Add(this.btnGestionUsuarios);
+            this.Controls.Add(this.btnReportes);
+            this.Controls.Add(this.btnInventario);
+            this.Controls.Add(this.btnVentas);
+            this.Name = "Form1";
+            this.Text = "NovaMarket - Menú Principal";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
     }
-
-    #region Windows Form Designer generated code
-
-    /// <summary>
-    ///  Required method for Designer support - do not modify
-    ///  the contents of this method with the code editor.
-    /// </summary>
-    private void InitializeComponent()
-    {
-        components = new System.ComponentModel.Container();
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(800, 450);
-        Text = "Form1";
-    }
-
-    #endregion
 }
