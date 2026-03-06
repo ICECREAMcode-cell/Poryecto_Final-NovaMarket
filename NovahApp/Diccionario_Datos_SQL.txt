@@ -1,0 +1,9 @@
+DICCIONARIO DE DATOS - NOVAMARKET
+
+Tabla Usuario: id (int, PK), nombre (varchar), email (varchar), password (varchar), rol_id (int, FK), activo (bit).
+
+Tabla Producto: id (int, PK), nombre (varchar), precioCompra (decimal), precioVenta (decimal), stock (int).
+
+Tabla Venta: id (int, PK), fecha (datetime), total (decimal), empleado_id (int, FK), cliente_id (int, FK).
+
+Tabla Gasto: id (int, PK), descripcion (text), monto (decimal), fecha (datetime

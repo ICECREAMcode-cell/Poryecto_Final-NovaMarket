@@ -1,0 +1,7 @@
+REGLAS DE NEGOCIO IMPLEMENTADAS:
+
+Control de Stock: No se permite procesar una venta si la cantidad solicitada es mayor al stock actual.
+
+Roles: Solo el Administrador tiene acceso al dashboard de ganancias y gestión de usuarios.
+
+Integridad: No se puede eliminar un producto que tenga ventas asociadas (historial protegido)
