@@ -1,0 +1,6 @@
+﻿​RESUMEN DE HISTORIAS DE USUARIO (HU):
+​HU#2 Gestión de Roles: Seguridad y permisos diferenciados para Admin y Empleado.
+​HU#3 Control de Stock: Trazabilidad completa de cada entrada y salida de mercadería.
+​HU#4 Registro de Ventas: El núcleo del negocio, permitiendo transacciones rápidas.
+​HU#5 Reporte Mensual: Balance automático de ingresos vs egresos para toma de decisiones.
+​HU#6 Historial Cliente: Verificación de compras pasadas para fidelización.
