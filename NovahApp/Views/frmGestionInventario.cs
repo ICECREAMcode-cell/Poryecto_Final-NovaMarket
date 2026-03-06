@@ -1,44 +1,60 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using NovahApp.Controllers;
-using NovahApp.Models;
+using System.Data;
+using Microsoft.Data.SqlClient;
+using NovahApp.Data;
 
 namespace NovahApp.Views
 {
     public class frmGestionInventario : Form
     {
-        private DataGridView dgvInventario;
-        private NumericUpDown numCantidad;
-        private Button btnCargar;
-        private EmpleadoController _control = new EmpleadoController();
+        private DataGridView dgvInv = new DataGridView();
+        private NumericUpDown numCantidad = new NumericUpDown();
+        private Button btnAgregar = new Button();
+        private InventarioRepository _repo = new InventarioRepository();
 
         public frmGestionInventario()
         {
-            InitializeComponentManual();
-        }
-
-        private void InitializeComponentManual()
-        {
             this.Text = "Control de Inventario - NovaMarket";
-            this.Size = new Size(650, 450);
+            this.Size = new Size(600, 450);
+            this.StartPosition = FormStartPosition.CenterScreen;
 
-            dgvInventario = new DataGridView { Location = new Point(20, 70), Size = new Size(590, 320) };
-            numCantidad = new NumericUpDown { Location = new Point(150, 25), Size = new Size(80, 25), Minimum = 1 };
-            btnCargar = new Button { Text = "Registrar Entrada", Location = new Point(250, 22), Size = new Size(150, 30) };
+            dgvInv.Location = new Point(20, 20);
+            dgvInv.Size = new Size(540, 250);
+            dgvInv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvInv.ReadOnly = true;
 
-            dgvInventario.DataSource = _control.ListarProductos();
-            btnCargar.Click += (s, e) => {
-                if (dgvInventario.CurrentRow != null) {
-                    int id = Convert.ToInt32(dgvInventario.CurrentRow.Cells["id"].Value);
-                    if (_control.AbastecerProducto(id, (int)numCantidad.Value, UsuarioSesion.Id)) {
-                        MessageBox.Show("Stock actualizado");
-                        dgvInventario.DataSource = _control.ListarProductos();
+            Label lbl = new Label { Text = "Cantidad a ingresar:", Location = new Point(20, 290), Size = new Size(150, 20) };
+            numCantidad.Location = new Point(20, 315);
+            numCantidad.Minimum = 1;
+
+            btnAgregar.Text = "ACTUALIZAR STOCK";
+            btnAgregar.Location = new Point(160, 310);
+            btnAgregar.Size = new Size(150, 35);
+            btnAgregar.BackColor = Color.Navy;
+            btnAgregar.ForeColor = Color.White;
+            btnAgregar.Click += (s, e) => {
+                if (dgvInv.CurrentRow != null) {
+                    int id = (int)dgvInv.CurrentRow.Cells["id"].Value;
+                    if (_repo.RegistrarEntradaStock(id, (int)numCantidad.Value)) {
+                        MessageBox.Show("Stock actualizado y registrado en historial.");
+                        Cargar();
                     }
                 }
             };
 
-            this.Controls.AddRange(new Control[] { dgvInventario, numCantidad, btnCargar });
+            this.Controls.AddRange(new Control[] { dgvInv, lbl, numCantidad, btnAgregar });
+            Cargar();
+        }
+
+        private void Cargar() {
+            using (var conn = DbContext.Instance.GetConnection()) {
+                SqlDataAdapter da = new SqlDataAdapter("SELECT id, nombre, stock FROM Producto", conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvInv.DataSource = dt;
+            }
         }
     }
 }
