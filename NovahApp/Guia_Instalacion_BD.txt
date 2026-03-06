@@ -1,0 +1,9 @@
+PASOS PARA MONTAR LA BASE DE DATOS:
+
+Abrir SQL Server Management Studio.
+
+Crear una base de datos llamada 'NovaMarket'.
+
+Ejecutar el script SQL adjunto en el repositorio.
+
+Cambiar el 'ConnectionString' en el archivo de configuración de C#
