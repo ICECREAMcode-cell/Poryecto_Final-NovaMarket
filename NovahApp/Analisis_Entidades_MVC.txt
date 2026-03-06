@@ -4,4 +4,4 @@ Models: Clases puras que representan las tablas (Producto.cs, Usuario.cs).
 
 Data/Repository: Manejo de la persistencia con ADO.NET y consultas SQL.
 
-Views: Formularios de Windows Forms para la interacción con el usuario
+Views: Formularios de Windows Forms para la interacción con el usuario.
