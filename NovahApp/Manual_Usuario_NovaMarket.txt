@@ -1,0 +1,5 @@
+﻿GUÍA DE USO NOVAMARKET:
+​Iniciar sesión con su correo y contraseña (ver tabla Usuarios).
+​Para vender: Ir a la pestaña 'Ventas', buscar el producto por nombre, añadir cantidad y confirmar.
+​Para inventario: El stock se actualiza automáticamente tras cada venta, pero puede editar precios en la pestaña 'Productos'.
+​Reportes: Al final del mes, presionar el botón 'Cierre Mensual' para respaldar los datos en un archivo local.
