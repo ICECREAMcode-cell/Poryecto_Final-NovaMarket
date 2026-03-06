@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Reportes";
+}
+
+<div class="container mt-4">
+
+    <h2>Reportes del Sistema</h2>
+
+    <div class="mb-4">
+
+        <a asp-controller="Reportes" asp-action="GananciasMensuales"
+           class="btn btn-primary">
+            Ganancias Mensuales
+        </a>
+
+        <a asp-controller="Reportes" asp-action="ProductosMasVendidos"
+           class="btn btn-success">
+            Productos Más Vendidos
+        </a>
+
+        <a asp-controller="Reportes" asp-action="VentasPorEmpleado"
+           class="btn btn-info">
+            Ventas por Empleado
+        </a>
+        <a asp-controller="Reportes"
+        asp-action="Auditoria"
+        class="btn btn-dark">
+        Auditoría del Sistema
+        </a>
+
+    </div>
+
+    <hr />
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5>Ingresos</h5>
+                    <h3>$ @ViewBag.Ingresos</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-danger text-white">
+                <div class="card-body">
+                    <h5>Egresos</h5>
+                    <h3>$ @ViewBag.Egresos</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <h5>Utilidad</h5>
+                    <h3>$ @ViewBag.Utilidad</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

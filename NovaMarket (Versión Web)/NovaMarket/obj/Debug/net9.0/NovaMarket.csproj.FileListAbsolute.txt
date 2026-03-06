@@ -1,0 +1,438 @@
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\appsettings.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\NovaMarket.staticwebassets.runtime.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\NovaMarket.staticwebassets.endpoints.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\NovaMarket.exe
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\NovaMarket.deps.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\NovaMarket.runtimeconfig.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\NovaMarket.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\NovaMarket.pdb
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Humanizer.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.csproj.AssemblyReference.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.AssemblyInfoInputs.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.AssemblyInfo.cs
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.csproj.CoreCompileInputs.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.RazorAssemblyInfo.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.RazorAssemblyInfo.cs
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\scopedcss\bundle\NovaMarket.styles.css
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\scopedcss\projectbundle\NovaMarket.bundle.scp.css
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\4dvao6owki-61n19gt1b8.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\9ho90d8rf6-xtxxf3hu2r.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\bxzte5p1re-bqjiyaj88i.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\xhcoczx5yh-c2jlpeoesf.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\u5fwss6qbu-erw9l3u2r3.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\vjtv05lggo-aexeepp0ev.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\pmit33ldrv-d7shbmvgxk.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\1nu9vk227h-ausgxo2sd3.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\8erti1zavl-k8d9w2qqmf.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\zd5zp6hcu3-cosvhxvwiu.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\onvp9g06o1-ub07r2b239.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\4xdkzemvu2-fvhpjtyr6v.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\bg832rr5im-b7pk76d08c.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\c3wemckzjx-fsbi9cje9m.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\qcdv55l3g7-rzd6atqjts.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\5q79zkefmh-ee0r1s7dh0.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\gfrr2dt56d-dxx9fxp4il.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\ptil46yve4-jd9uben2k1.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\ncca9b1v8q-khv3u5hwcm.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\41nyugbzi7-r4e9w2rdcm.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\huysc20s6u-lcd1t2u6c8.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\7fw8ed4a6u-c2oey78nd0.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\pcm25tps44-tdbxkamptv.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\yhwlmy3mxj-j5mq2jizvt.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\exnt3cc160-06098lyss8.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\2d6g5vdrsr-nvvlpmu67g.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\abxs56epqd-s35ty4nyc5.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\kv2yp7zvff-pj5nd1wqec.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\a4kgo7icct-46ein0sx1k.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\6xiou9d2qc-v0zj4ognzu.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\zyqq8ytocp-37tfw0ft22.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\7lbz93dafg-hrwsygsryq.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\7g1ri9ydya-pk9g2wxc8p.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\akxpjbw8pt-ft3s53vfgj.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\g15yfbs4r3-6cfz1n2cew.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\nmyx59xm1w-6pdc2jztkx.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\hhk5f768x7-493y06b0oq.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\8983ug2gp7-iovd86k7lj.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\m0iovk168o-vr1egmr9el.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\bqxbk3rit1-kbrnm935zg.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\2unbip7jpu-jj8uyg4cgr.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\ue1b32mjy3-y7v9cxd14o.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\x8sjt2rke8-notf2xhcfb.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\un89pyj0o4-h1s4sie4z3.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\kddjeagz19-63fj8s7r0e.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\3ju3y14g2f-0j3bgjxly4.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\z6h1g9uc9p-47otxtyo56.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\ev5yl2zawb-4v8eqarkd7.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\wwf8smudny-356vix0kms.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\bjrirqa2r8-83jwlth58m.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\hlrmporfs5-mrlpezrjn3.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\1ud6gdzqb6-lzl9nlhx6b.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\gpuh1ke0g4-ag7o75518u.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\83a7imb308-x0q3zqp4vz.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\2icz4vohh0-0i3buxo5is.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\3jkxqi0zsy-o1o13a6vjx.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\0o8n8sv6c4-ttgo8qnofa.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\x84qilbenp-2z0ns9nrw6.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\1hy6527wlm-muycvpuwrr.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\y39y2shepp-87fc7y1x7t.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\h3ub643qla-mlv21k5csn.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\jtw4h0xoca-a119vyozl5.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\h6h2yjkbm2-a119vyozl5.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.csproj.Up2Date
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\refint\NovaMarket.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.pdb
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\NovaMarket.genruntimeconfig.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\ref\NovaMarket.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket\obj\Debug\net9.0\compressed\u0ds8x5amx-q60xgs7z4l.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\appsettings.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\NovaMarket.staticwebassets.endpoints.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\NovaMarket.staticwebassets.runtime.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\NovaMarket.exe
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\NovaMarket.deps.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\NovaMarket.runtimeconfig.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\NovaMarket.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\NovaMarket.pdb
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Humanizer.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.csproj.AssemblyReference.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.AssemblyInfoInputs.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.AssemblyInfo.cs
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.csproj.CoreCompileInputs.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.RazorAssemblyInfo.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.RazorAssemblyInfo.cs
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\scopedcss\bundle\NovaMarket.styles.css
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\scopedcss\projectbundle\NovaMarket.bundle.scp.css
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\u0ds8x5amx-q60xgs7z4l.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\4dvao6owki-61n19gt1b8.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\9ho90d8rf6-xtxxf3hu2r.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\bxzte5p1re-bqjiyaj88i.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\xhcoczx5yh-c2jlpeoesf.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\u5fwss6qbu-erw9l3u2r3.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\vjtv05lggo-aexeepp0ev.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\pmit33ldrv-d7shbmvgxk.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\1nu9vk227h-ausgxo2sd3.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\8erti1zavl-k8d9w2qqmf.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\zd5zp6hcu3-cosvhxvwiu.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\onvp9g06o1-ub07r2b239.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\4xdkzemvu2-fvhpjtyr6v.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\bg832rr5im-b7pk76d08c.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\c3wemckzjx-fsbi9cje9m.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\qcdv55l3g7-rzd6atqjts.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\5q79zkefmh-ee0r1s7dh0.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\gfrr2dt56d-dxx9fxp4il.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\ptil46yve4-jd9uben2k1.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\ncca9b1v8q-khv3u5hwcm.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\41nyugbzi7-r4e9w2rdcm.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\huysc20s6u-lcd1t2u6c8.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\7fw8ed4a6u-c2oey78nd0.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\pcm25tps44-tdbxkamptv.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\yhwlmy3mxj-j5mq2jizvt.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\exnt3cc160-06098lyss8.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\2d6g5vdrsr-nvvlpmu67g.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\abxs56epqd-s35ty4nyc5.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\kv2yp7zvff-pj5nd1wqec.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\a4kgo7icct-46ein0sx1k.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\6xiou9d2qc-v0zj4ognzu.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\zyqq8ytocp-37tfw0ft22.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\7lbz93dafg-hrwsygsryq.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\7g1ri9ydya-pk9g2wxc8p.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\akxpjbw8pt-ft3s53vfgj.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\g15yfbs4r3-6cfz1n2cew.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\nmyx59xm1w-6pdc2jztkx.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\hhk5f768x7-493y06b0oq.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\8983ug2gp7-iovd86k7lj.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\m0iovk168o-vr1egmr9el.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\bqxbk3rit1-kbrnm935zg.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\2unbip7jpu-jj8uyg4cgr.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\ue1b32mjy3-y7v9cxd14o.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\x8sjt2rke8-notf2xhcfb.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\un89pyj0o4-h1s4sie4z3.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\kddjeagz19-63fj8s7r0e.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\3ju3y14g2f-0j3bgjxly4.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\z6h1g9uc9p-47otxtyo56.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\ev5yl2zawb-4v8eqarkd7.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\wwf8smudny-356vix0kms.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\bjrirqa2r8-83jwlth58m.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\hlrmporfs5-mrlpezrjn3.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\1ud6gdzqb6-lzl9nlhx6b.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\gpuh1ke0g4-ag7o75518u.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\83a7imb308-x0q3zqp4vz.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\2icz4vohh0-0i3buxo5is.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\3jkxqi0zsy-o1o13a6vjx.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\0o8n8sv6c4-ttgo8qnofa.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\x84qilbenp-2z0ns9nrw6.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\1hy6527wlm-muycvpuwrr.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\y39y2shepp-87fc7y1x7t.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\h3ub643qla-mlv21k5csn.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\jtw4h0xoca-a119vyozl5.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\compressed\h6h2yjkbm2-a119vyozl5.gz
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.csproj.Up2Date
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\refint\NovaMarket.dll
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.pdb
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\NovaMarket.genruntimeconfig.cache
+C:\Users\Arturo\Documents\NovaMarket\NovaMarket (Versión Web)\obj\Debug\net9.0\ref\NovaMarket.dll

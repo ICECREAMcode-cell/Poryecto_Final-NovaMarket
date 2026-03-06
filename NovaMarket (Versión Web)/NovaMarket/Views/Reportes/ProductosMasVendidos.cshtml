@@ -1,0 +1,57 @@
+@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Productos Más Vendidos";
+}
+
+<h2>Productos Más Vendidos</h2>
+
+    <div class="mb-4">
+
+        <a asp-controller="Reportes" asp-action="GananciasMensuales"
+           class="btn btn-primary">
+            Ganancias Mensuales
+        </a>
+
+        <a asp-controller="Reportes" asp-action="ProductosMasVendidos"
+           class="btn btn-success">
+            Productos Más Vendidos
+        </a>
+
+        <a asp-controller="Reportes" asp-action="VentasPorEmpleado"
+           class="btn btn-info">
+            Ventas por Empleado
+        </a>
+        <a asp-controller="Reportes"
+        asp-action="Auditoria"
+        class="btn btn-dark">
+        Auditoría del Sistema
+        </a>
+
+    </div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad Vendida</th>
+            <th>Total Generado</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductoNombre</td>
+            <td>@item.Cantidad</td>
+            <td>@item.Total</td>
+        </tr>
+    }
+}
+
+    </tbody>
+</table>
