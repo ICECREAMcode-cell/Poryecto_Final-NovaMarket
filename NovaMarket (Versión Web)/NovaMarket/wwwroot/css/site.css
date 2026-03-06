@@ -1,0 +1,77 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+/* LOGO NOVAMARKET */
+
+.logo-nova{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff !important;
+    transition: transform 0.3s ease;
+}
+
+.logo-nova:hover{
+    transform: scale(1.08);
+}
+
+
+/* ANIMACIÓN BOTONES NAVBAR */
+
+.nav-anim{
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+
+/* efecto hover */
+.nav-anim:hover{
+    color: #00d4ff !important;
+    transform: translateY(-2px);
+}
+
+
+/* línea animada */
+.nav-anim::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #00d4ff;
+    transition: width 0.3s ease;
+}
+
+.nav-anim:hover::after{
+    width: 100%;
+}

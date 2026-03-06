@@ -1,0 +1,35 @@
+@model NovaMarket.Models.Producto
+
+@{
+    ViewData["Title"] = "Detalle Producto";
+}
+
+<h2>Detalle del Producto</h2>
+
+<div class="card">
+
+    <div class="card-body">
+
+        <p><strong>ID:</strong> @Model.Id</p>
+
+        <p><strong>Nombre:</strong> @Model.Nombre</p>
+
+        <p><strong>Precio Compra:</strong> @Model.PrecioCompra</p>
+
+        <p><strong>Precio Venta:</strong> @Model.PrecioVenta</p>
+
+        <p><strong>Stock:</strong> @Model.Stock</p>
+
+    </div>
+
+</div>
+
+<br>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+    Editar
+</a>
+
+<a asp-action="Index" class="btn btn-secondary">
+    Volver
+</a>

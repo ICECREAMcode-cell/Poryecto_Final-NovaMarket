@@ -1,0 +1,276 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Inicio";
+    var rol = Context.Session.GetString("Rol");
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins', sans-serif;
+}
+
+.dashboard-title{
+font-weight:600;
+letter-spacing:1px;
+margin-bottom:5px;
+}
+
+.dashboard-subtitle{
+color:#6c757d;
+margin-bottom:35px;
+font-weight:300;
+}
+
+.dashboard-link{
+text-decoration:none;
+color:inherit;
+display:block;
+}
+
+.card-dashboard{
+border:none;
+border-radius:14px;
+transition:all .25s ease;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+color:white;
+cursor:pointer;
+}
+
+.card-dashboard:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-body{
+padding:35px 20px;
+}
+
+.card-title{
+font-weight:600;
+margin-bottom:10px;
+}
+
+.card-text{
+font-size:14px;
+opacity:.9;
+}
+
+/* COLORES */
+
+.card-productos{
+background:#0d6efd;
+}
+
+.card-ventas{
+background:#198754;
+}
+
+.card-clientes{
+background:#0dcaf0;
+}
+
+.card-egresos{
+background:#dc3545;
+}
+
+.card-reportes{
+background:#ffc107;
+color:black;
+}
+
+.card-usuarios{
+background:#212529;
+}
+
+</style>
+
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="dashboard-title">Panel de Control</h2>
+
+<p class="dashboard-subtitle">
+Sistema de Gestión - NovaMarket
+</p>
+
+</div>
+
+
+<div class="row g-4">
+
+
+<!-- PRODUCTOS -->
+
+<div class="col-md-4">
+
+<a asp-controller="Productos"
+asp-action="Index"
+class="dashboard-link">
+
+<div class="card card-dashboard card-productos">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Productos</h5>
+
+<p class="card-text">
+Administrar inventario, precios y stock.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+
+<!-- VENTAS -->
+
+<div class="col-md-4">
+
+<a asp-controller="Ventas"
+asp-action="Index"
+class="dashboard-link">
+
+<div class="card card-dashboard card-ventas">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Ventas</h5>
+
+<p class="card-text">
+Registrar ventas y generar comprobantes.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+
+<!-- CLIENTES -->
+
+<div class="col-md-4">
+
+<a asp-controller="Clientes"
+asp-action="Index"
+class="dashboard-link">
+
+<div class="card card-dashboard card-clientes">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Clientes</h5>
+
+<p class="card-text">
+Administrar clientes registrados.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+
+<!-- EGRESOS -->
+
+<div class="col-md-4">
+
+<a asp-controller="Egresos"
+asp-action="Index"
+class="dashboard-link">
+
+<div class="card card-dashboard card-egresos">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Egresos</h5>
+
+<p class="card-text">
+Registrar gastos del supermercado.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+
+@if (rol == "Admin" || rol == "Administrador")
+{
+
+<!-- REPORTES -->
+
+<div class="col-md-4">
+
+<a asp-controller="Reportes"
+asp-action="GananciasMensuales"
+class="dashboard-link">
+
+<div class="card card-dashboard card-reportes">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Reportes</h5>
+
+<p class="card-text">
+Consultar reportes de ventas, ganancias y auditoría.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+
+<!-- USUARIOS -->
+
+<div class="col-md-4">
+
+<a asp-controller="Usuarios"
+asp-action="Index"
+class="dashboard-link">
+
+<div class="card card-dashboard card-usuarios">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Usuarios</h5>
+
+<p class="card-text">
+Gestionar usuarios y roles del sistema.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+}
+
+</div>
+
+</div>

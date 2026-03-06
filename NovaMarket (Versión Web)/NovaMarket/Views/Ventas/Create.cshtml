@@ -1,0 +1,104 @@
+@{
+    ViewData["Title"] = "Nueva Venta";
+}
+
+<h2>Nueva Venta</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+<form asp-action="Create" method="post">
+
+<div class="mb-3">
+    <label class="form-label">Cliente</label>
+    <select name="clienteId" asp-items="ViewBag.Clientes" class="form-control" required></select>
+</div>
+
+<hr>
+
+<h4>Productos</h4>
+
+<table class="table" id="tablaProductos">
+
+<thead>
+<tr>
+    <th style="width:50%">Producto</th>
+    <th style="width:20%">Cantidad</th>
+    <th style="width:20%"></th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+<select name="productoId" asp-items="ViewBag.Productos" class="form-control" required></select>
+</td>
+
+<td>
+<input type="number" name="cantidad" class="form-control" min="1" required />
+</td>
+
+<td>
+<button type="button" class="btn btn-danger" onclick="eliminarFila(this)">
+Eliminar
+</button>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<button type="button" class="btn btn-secondary" onclick="agregarFila()">
+Agregar Producto
+</button>
+
+<br><br>
+
+<button type="submit" class="btn btn-success">
+Registrar Venta
+</button>
+
+<a asp-action="Index" class="btn btn-secondary">
+Cancelar
+</a>
+
+</form>
+
+<script>
+
+function agregarFila() {
+
+    var tabla = document.getElementById("tablaProductos")
+                .getElementsByTagName('tbody')[0];
+
+    var filaOriginal = tabla.rows[0];
+
+    var nuevaFila = filaOriginal.cloneNode(true);
+
+    // limpiar inputs
+    nuevaFila.querySelector("input").value = "";
+
+    tabla.appendChild(nuevaFila);
+}
+
+function eliminarFila(btn) {
+
+    var fila = btn.parentNode.parentNode;
+
+    var tabla = document.getElementById("tablaProductos")
+                .getElementsByTagName('tbody')[0];
+
+    if (tabla.rows.length > 1) {
+        fila.remove();
+    }
+}
+
+</script>
