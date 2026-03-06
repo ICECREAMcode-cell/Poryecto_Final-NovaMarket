@@ -1,0 +1,7 @@
+LOG DE PRUEBAS MANUALES:
+
+Prueba 1: Registro de Venta -> Resultado: Exitoso (Stock descontado en DB).
+
+Prueba 2: Login con credenciales incorrectas -> Resultado: Exitoso.
+
+Prueba 3: Cierre Mensual -> Resultado: Exitoso (Archivo .txt generado en D:).
