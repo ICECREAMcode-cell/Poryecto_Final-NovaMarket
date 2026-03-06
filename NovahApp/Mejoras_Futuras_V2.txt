@@ -1,0 +1,5 @@
+﻿​PROPUESTAS PARA LA VERSIÓN 2.0:
+​Implementar Entity Framework Core para una persistencia de datos más ágil y moderna.
+​Generación automática de comprobantes de venta en formato PDF (Facturación).
+​Dashboard con gráficos estadísticos de los productos más vendidos y tendencias de gastos.
+​Conexión de la base de datos a un servicio en la nube como Azure o AWS para acceso remoto.

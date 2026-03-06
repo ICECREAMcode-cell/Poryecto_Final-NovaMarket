@@ -1,0 +1,7 @@
+﻿STACK TECNOLÓGICO DEL PROYECTO NOVAMARKET:
+​Lenguaje: C# (Versión 7.3+).
+​Entorno: .NET 8.0 / Windows Forms.
+​Base de Datos: SQL Server.
+​Control de Versiones: Git / GitHub.
+​Automatización: GitHub Actions (CI/CD).
+​Modelado: UML mediante PlantUML.
