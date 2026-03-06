@@ -20,9 +20,6 @@ GO
 USE Nova_DB;
 GO
 
--- ============================================================
---  TABLA: Usuario
--- ============================================================
 CREATE TABLE Usuario (
     id          INT             NOT NULL IDENTITY(1,1),
     nombre      NVARCHAR(100)   NOT NULL,
@@ -44,6 +41,8 @@ CREATE TABLE Administrador (
     CONSTRAINT FK_Administrador_Usuario FOREIGN KEY (id)
         REFERENCES Usuario(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+
 GO
 
 -- ============================================================
@@ -56,6 +55,10 @@ CREATE TABLE Empleado (
         REFERENCES Usuario(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 GO
+INSERT INTO Usuario (nombre, email, password, rol_id) 
+VALUES ('Administrador Sistema', 'admin@nova.com', 'admin123', 1);
+
+SELECT * FROM Usuario;
 
 -- ============================================================
 --  TABLA: Cliente  (hereda de Usuario)
@@ -161,8 +164,6 @@ CREATE TABLE ReporteMensual (
 );
 GO
 
-PRINT 'Base de datos Nova_DB creada exitosamente.';
-GO
 
 -- 1. Crear la tabla de Roles
 CREATE TABLE Rol (
@@ -195,3 +196,134 @@ FOREIGN KEY (rol_id) REFERENCES Rol(id);
 GO
 
 SELECT * FROM Rol;
+
+
+
+-- 1. Limpiamos datos de prueba anteriores
+DELETE FROM Administrador;
+DELETE FROM Usuario;
+GO
+
+-- 2. Insertamos el Usuario base
+-- Nota: Asegúrate de que el rol_id 1 sea 'Administrador'
+INSERT INTO Usuario (nombre, email, password, rol_id) 
+VALUES ('Administrador Sistema', 'admin@nova.com', 'admin123', 1);
+
+-- 3. IMPORTANTE: Insertar el ID del usuario en la tabla Administrador
+-- Como es el primer usuario, su ID es 1. 
+-- Esto es lo que faltaba para que las llaves foráneas no fallen.
+INSERT INTO Administrador (id) VALUES (1);
+GO
+
+-- 4. Verificamos la unión
+SELECT u.id, u.nombre, r.nombre as Rol, a.id as EsAdmin
+FROM Usuario u
+JOIN Rol r ON u.rol_id = r.id
+LEFT JOIN Administrador a ON u.id = a.id;
+
+SELECT * FROM Usuario;
+SELECT * FROM Rol;
+SELECT * FROM Producto;
+
+-- Agregamos la columna 'activo' para poder denegar el acceso (banear)
+ALTER TABLE Usuario ADD activo BIT NOT NULL DEFAULT 1;
+GO
+-- Agregamos la columna para la ruta de la imagen
+ALTER TABLE Producto ADD imagen_ruta NVARCHAR(MAX) NULL;
+GO
+
+-- 1. Primero verificamos que exista el Usuario con ID 1
+IF NOT EXISTS (SELECT 1 FROM Usuario WHERE id = 1)
+BEGIN
+    SET IDENTITY_INSERT Usuario ON;
+    INSERT INTO Usuario (id, nombre, contrasena, rol_id) VALUES (1, 'Admin', '123', 1);
+    SET IDENTITY_INSERT Usuario OFF;
+END
+
+-- 2. Creamos el registro en la tabla Empleado para que la FK no falle
+IF NOT EXISTS (SELECT 1 FROM Empleado WHERE id = 1)
+BEGIN
+    SET IDENTITY_INSERT Empleado ON;
+    INSERT INTO Empleado (id, nombre, cargo) VALUES (1, 'Administrador Sistema', 'Gerente');
+    SET IDENTITY_INSERT Empleado OFF;
+END
+GO
+
+-- 1. Eliminamos la restricción antigua que causaba el error
+ALTER TABLE Venta DROP CONSTRAINT FK_Venta_Empleado;
+
+-- 2. Cambiamos la referencia para que apunte a la tabla Usuario
+ALTER TABLE Venta 
+ADD CONSTRAINT FK_Venta_Usuario 
+FOREIGN KEY (empleado_id) REFERENCES Usuario(id);
+
+-- 3. (Opcional) Si quieres que el cliente también sea opcional o use la misma tabla:
+ALTER TABLE Venta DROP CONSTRAINT FK_Venta_Cliente;
+-- Ahora cliente_id puede ser cualquier ID o NULL sin que truene el programa
+
+
+-- Tabla para registrar gastos (luz, alquiler, compras, etc.)
+CREATE TABLE Gasto (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    descripcion NVARCHAR(200) NOT NULL,
+    monto FLOAT NOT NULL,
+    fecha DATETIME DEFAULT GETDATE(),
+    usuario_id INT NOT NULL,
+    CONSTRAINT FK_Gasto_Usuario FOREIGN KEY (usuario_id) REFERENCES Usuario(id)
+);
+GO
+
+SELECT * FROM Gasto;
+
+/* =============================================================================
+   PROYECTO: NOVAMARKET - MÓDULO DE MANTENIMIENTO DE BASE DE DATOS
+   DESCRIPCIÓN: Limpieza de registros y reinicio de contadores IDENTITY a 1.
+   ESTUDIANTE: Litos
+   ============================================================================= */
+
+BEGIN TRANSACTION;
+BEGIN TRY
+
+    -- 1. ELIMINACIÓN DE REGISTROS (Orden inverso para respetar Llaves Foráneas)
+    DELETE FROM DetalleVenta;    -- Registros de ventas específicas
+    DELETE FROM MovimientoStock; -- Historial de inventario
+    DELETE FROM ReporteMensual;  -- Reportes financieros
+    DELETE FROM Gasto;           -- Gastos operativos
+    DELETE FROM Venta;           -- Cabeceras de ventas
+    
+    DELETE FROM Administrador;   -- Relación de Admin
+    DELETE FROM Empleado;        -- Relación de Empleado
+    DELETE FROM Cliente;         -- Relación de Cliente
+    DELETE FROM Producto;        -- Catálogo de productos
+    DELETE FROM Usuario;         -- Tabla de identidades
+    -- NOTA: La tabla 'Rol' no se toca para mantener la configuración base.
+
+    -- 2. REINICIO DE CONTADORES IDENTITY (Vuelven a empezar en 1)
+    -- Se usa RESEED a 0 para que el siguiente INSERT genere el ID 1 automáticamente.
+    DBCC CHECKIDENT ('DetalleVenta', RESEED, 0);
+    DBCC CHECKIDENT ('MovimientoStock', RESEED, 0);
+    DBCC CHECKIDENT ('ReporteMensual', RESEED, 0);
+    DBCC CHECKIDENT ('Gasto', RESEED, 0);
+    DBCC CHECKIDENT ('Venta', RESEED, 0);
+    DBCC CHECKIDENT ('Producto', RESEED, 0);
+    DBCC CHECKIDENT ('Usuario', RESEED, 0);
+
+    -- 3. RE-CONFIGURACIÓN DE CUENTA ADMINISTRADOR PRINCIPAL
+    -- Insertamos tu cuenta de Litos para que sea el Usuario ID #1
+    INSERT INTO Usuario (nombre, email, password, rol_id, activo) 
+    VALUES ('Litos', 'litos@nova.com', 'litos123', 1, 1);
+
+    -- Vinculamos el ID 1 a las tablas de herencia necesarias
+    INSERT INTO Administrador (id) VALUES (1);
+    INSERT INTO Empleado (id) VALUES (1);
+
+    COMMIT TRANSACTION;
+    PRINT '>>> ÉXITO: Tablas vacías y contadores reiniciados a 1.';
+    PRINT '>>> Tu cuenta "litos@nova.com" ha sido restaurada con ID 1.';
+
+END TRY
+BEGIN CATCH
+    ROLLBACK TRANSACTION;
+    PRINT '>>> ERROR: No se pudo completar la limpieza. ' + ERROR_MESSAGE();
+END CATCH;
+GO
