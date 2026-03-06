@@ -1,0 +1,4 @@
+conexion a la base datos
+
+instalar la siguiente libreria
+dotnet add package Microsoft.Data.SqlClient

@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+skinparam monochrome true
+skinparam shadowing false
+
+actor "Administrador" as admin
+actor "Empleado" as emp
+actor "Usuario" as user
+
+rectangle "Sistema Supermercado - NovaMarket" {
+
+  usecase "Gestionar Roles" as UC1
+  usecase "Registrar Venta" as UC2
+  usecase "Actualizar Stock" as UC3
+  usecase "Generar Reporte Mensual" as UC4
+  usecase "Consultar Historial Compras" as UC5
+  usecase "Registrar Movimiento Stock" as UC6
+
+  UC2 .> UC3 : <<include>>
+  UC3 .> UC6 : <<include>>
+}
+
+admin --> UC1
+admin --> UC4
+admin --> UC6
+
+emp --> UC2
+
+user --> UC5
+
+@enduml
