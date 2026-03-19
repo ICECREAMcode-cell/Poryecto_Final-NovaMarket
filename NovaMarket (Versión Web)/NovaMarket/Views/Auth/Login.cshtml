@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+
+            <div class="card shadow">
+                <div class="card-header text-center">
+                    <h4>NovaMarket</h4>
+                    <small>Iniciar Sesión</small>
+                </div>
+
+                <div class="card-body">
+
+                    <form asp-controller="Auth" asp-action="Login" method="post">
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input name="email" type="email" class="form-control" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Contraseña</label>
+                            <input name="password" type="password" class="form-control" required />
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">
+                                Ingresar
+                            </button>
+                        </div>
+
+                        @if (ViewBag.Error != null)
+                        {
+                            <div class="alert alert-danger mt-3">
+                                @ViewBag.Error
+                            </div>
+                        }
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

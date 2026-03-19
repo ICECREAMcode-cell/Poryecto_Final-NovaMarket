@@ -1,0 +1,35 @@
+@model NovaMarket.Models.Cliente
+
+@{
+    ViewData["Title"] = "Eliminar Cliente";
+}
+
+<h2>Eliminar Cliente</h2>
+
+<div class="alert alert-danger">
+    ¿Seguro que deseas eliminar este cliente?
+</div>
+
+<div>
+
+    <p><strong>Nombre:</strong> @Model.Nombre</p>
+
+    <p><strong>Email:</strong> @Model.Email</p>
+
+    <p><strong>Teléfono:</strong> @Model.Telefono</p>
+
+</div>
+
+<form asp-action="Delete">
+
+    <input type="hidden" asp-for="Id"/>
+
+    <button type="submit" class="btn btn-danger">
+        Eliminar
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>

@@ -1,0 +1,273 @@
+﻿@using Microsoft.AspNetCore.Http
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>@ViewData["Title"] - NovaMarket</title>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ---------- LOGO ---------- */
+
+.logo-nova{
+font-family:'Poppins', sans-serif;
+font-size:1.6rem;
+font-weight:700;
+letter-spacing:1px;
+color:#fff !important;
+transition:transform .25s ease;
+}
+
+.logo-nova:hover{
+transform:scale(1.04);
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+box-shadow:0 4px 14px rgba(0,0,0,0.35);
+padding-top:8px;
+padding-bottom:8px;
+}
+
+/* ---------- OPCIONES DEL MENÚ ---------- */
+
+.navbar-nav .nav-link{
+font-family:'Poppins', sans-serif;
+font-size:0.95rem;
+font-weight:500;
+margin-left:8px;
+margin-right:8px;
+color:#eaeaea !important;
+transition:all .25s ease;
+padding:6px 8px;
+}
+
+.navbar-nav .nav-link:hover{
+color:#00d4ff !important;
+transform:translateY(-1px);
+}
+
+/* ---------- EFECTO SUBRAYADO ---------- */
+
+.nav-anim{
+position:relative;
+}
+
+.nav-anim::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-2px;
+width:0%;
+height:2px;
+background:#00d4ff;
+transition:width .3s ease;
+}
+
+.nav-anim:hover::after{
+width:100%;
+}
+
+/* ---------- MARCO USUARIO ---------- */
+
+.user-box{
+border:1px solid rgba(255,255,255,0.25);
+padding:4px 10px;
+border-radius:8px;
+margin-right:8px;
+background:rgba(255,255,255,0.05);
+font-size:0.85rem;
+}
+
+/* ---------- BOTONES LOGIN / LOGOUT ---------- */
+
+.auth-btn{
+border:1px solid rgba(255,255,255,0.3);
+padding:4px 12px;
+border-radius:8px;
+font-size:0.85rem;
+font-weight:500;
+transition:all .25s ease;
+}
+
+/* LOGIN */
+
+.navbar-dark .navbar-nav .login-btn:hover{
+background:#28a745 !important;
+border-color:#28a745 !important;
+color:#ffffff !important;
+}
+
+/* LOGOUT */
+
+.navbar-dark .navbar-nav .logout-btn:hover{
+background:#dc3545 !important;
+border-color:#dc3545 !important;
+color:#ffffff !important;
+}
+
+/* EVITAR AZUL DE BOOTSTRAP */
+
+.navbar-dark .navbar-nav .auth-btn:hover{
+color:#ffffff !important;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand logo-nova" asp-controller="Home" asp-action="Index">
+NovaMarket
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNova">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNova">
+
+<!-- MENÚ IZQUIERDO -->
+
+<ul class="navbar-nav me-auto">
+
+@if (Context.Session.GetInt32("UsuarioId") != null)
+{
+
+<li class="nav-item">
+<a class="nav-link nav-anim" asp-controller="Productos" asp-action="Index">
+Productos
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link nav-anim" asp-controller="Clientes" asp-action="Index">
+Clientes
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link nav-anim" asp-controller="Ventas" asp-action="Index">
+Ventas
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link nav-anim" asp-controller="Egresos" asp-action="Index">
+Egresos
+</a>
+</li>
+
+@if (Context.Session.GetString("Rol") == "Admin" || Context.Session.GetString("Rol") == "Administrador")
+{
+
+<li class="nav-item">
+<a class="nav-link nav-anim" asp-controller="Usuarios" asp-action="Index">
+Usuarios
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link nav-anim" asp-controller="Reportes" asp-action="GananciasMensuales">
+Reportes
+</a>
+</li>
+
+}
+
+}
+
+</ul>
+
+<!-- MENÚ DERECHO -->
+
+<ul class="navbar-nav align-items-center">
+
+@if (Context.Session.GetInt32("UsuarioId") != null)
+{
+
+<li class="nav-item">
+<span class="text-light user-box">
+@Context.Session.GetString("UsuarioNombre")
+(@Context.Session.GetString("Rol"))
+</span>
+</li>
+
+<li class="nav-item">
+<a class="nav-link auth-btn logout-btn text-light"
+asp-controller="Auth"
+asp-action="Logout">
+Cerrar sesión
+</a>
+</li>
+
+}
+else
+{
+
+<li class="nav-item">
+<a class="nav-link auth-btn login-btn text-light"
+asp-controller="Auth"
+asp-action="Login">
+Iniciar sesión
+</a>
+</li>
+
+}
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<div class="container mt-4">
+
+<main role="main" class="pb-3">
+
+@RenderBody()
+
+</main>
+
+</div>
+
+
+<footer class="border-top footer text-muted mt-5">
+
+<div class="container text-center">
+
+© 2026 - NovaMarket
+
+</div>
+
+</footer>
+
+
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+</html>

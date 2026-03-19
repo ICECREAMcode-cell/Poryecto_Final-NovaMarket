@@ -1,0 +1,43 @@
+@model NovaMarket.Models.Egreso
+
+@{
+    ViewData["Title"] = "Eliminar Egreso";
+}
+
+<h2>Eliminar Egreso</h2>
+
+<h4>¿Estás seguro que deseas eliminar este egreso?</h4>
+
+<div>
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            Descripción
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Descripcion
+        </dd>
+
+        <dt class="col-sm-2">
+            Monto
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Monto
+        </dd>
+
+        <dt class="col-sm-2">
+            Fecha
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Fecha.ToString("dd/MM/yyyy")
+        </dd>
+
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id"/>
+
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

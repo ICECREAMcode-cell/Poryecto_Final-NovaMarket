@@ -1,0 +1,60 @@
+@model IEnumerable<NovaMarket.Models.Egreso>
+
+@{
+    ViewData["Title"] = "Egresos";
+}
+
+<div class="container">
+
+    <div class="d-flex justify-content-between mb-3">
+        <h2>Egresos</h2>
+
+        <a asp-action="Create" class="btn btn-primary">
+            Nuevo Egreso
+        </a>
+    </div>
+
+    <table class="table table-striped">
+
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Descripción</th>
+                <th>Monto</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>@item.Id</td>
+
+                <td>@item.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+
+                <td>@item.Descripcion</td>
+
+                <td>Bs. @item.Monto</td>
+
+                <td>
+
+                    <a asp-action="Delete"
+                       asp-route-id="@item.Id"
+                       class="btn btn-danger btn-sm">
+                        Eliminar
+                    </a>
+
+                </td>
+
+            </tr>
+        }
+
+        </tbody>
+
+    </table>
+
+</div>

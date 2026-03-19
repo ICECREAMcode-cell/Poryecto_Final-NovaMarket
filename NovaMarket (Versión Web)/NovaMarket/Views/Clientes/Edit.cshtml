@@ -1,0 +1,36 @@
+@model NovaMarket.Models.Cliente
+
+@{
+    ViewData["Title"] = "Editar Cliente";
+}
+
+<h2>Editar Cliente</h2>
+
+<form asp-action="Edit">
+
+    <input type="hidden" asp-for="Id"/>
+
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label"></label>
+        <input asp-for="Nombre" class="form-control"/>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control"/>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Telefono" class="form-label"></label>
+        <input asp-for="Telefono" class="form-control"/>
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Actualizar
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Volver
+    </a>
+
+</form>

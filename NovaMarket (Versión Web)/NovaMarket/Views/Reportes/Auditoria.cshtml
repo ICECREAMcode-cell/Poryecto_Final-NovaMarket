@@ -1,0 +1,60 @@
+@model IEnumerable<NovaMarket.Models.Auditoria>
+
+@{
+    ViewData["Title"] = "Auditoría del Sistema";
+}
+
+<h2>Auditoría del Sistema</h2>
+
+    <div class="mb-4">
+
+        <a asp-controller="Reportes" asp-action="GananciasMensuales"
+           class="btn btn-primary">
+            Ganancias Mensuales
+        </a>
+
+        <a asp-controller="Reportes" asp-action="ProductosMasVendidos"
+           class="btn btn-success">
+            Productos Más Vendidos
+        </a>
+
+        <a asp-controller="Reportes" asp-action="VentasPorEmpleado"
+           class="btn btn-info">
+            Ventas por Empleado
+        </a>
+        <a asp-controller="Reportes"
+        asp-action="Auditoria"
+        class="btn btn-dark">
+        Auditoría del Sistema
+        </a>
+
+    </div>
+
+<table class="table table-striped table-hover">
+
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Usuario</th>
+<th>Acción</th>
+<th>Tabla</th>
+<th>Descripción</th>
+</tr>
+</thead>
+
+<tbody>
+
+@foreach (var item in Model)
+{
+<tr>
+<td>@item.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+<td>@item.UsuarioNombre</td>
+<td>@item.Accion</td>
+<td>@item.Tabla</td>
+<td>@item.Descripcion</td>
+</tr>
+}
+
+</tbody>
+
+</table>
